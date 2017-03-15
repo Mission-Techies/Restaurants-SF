@@ -10,10 +10,12 @@ var renderrestaurantsData = function(data) {
     restaurantsHTML += '<h4>' + restaurant.fields['Address'] + '</h4>';
     restaurantsHTML += '<p>' + restaurant.fields['phone number'] + '</p>';
    restaurantsHTML += '<p>' + restaurant.fields['Rate'] + '</p>';
-    restaurantsHTML += '<p>' + restaurant.fields['Hours'] + '</p>'
 
-    //console.log(restaurant.fields['Pictures[0]']);
-    restaurantsHTML += '<img  src =" ${Pictures.url}" >';
+ restaurantsHTML += '<a href="' + restaurant.fields['Website'] + '">' + restaurant.fields['Website'] + '</a>';
+   restaurantsHTML += '<p>' + restaurant.fields['Hours'] + '</p>'
+    restaurantsHTML += '<a href="' + restaurant.fields['Menu'] + '">' + restaurant.fields['Menu'] + '</a>';
+    //restaurantsHTML += '<img  src =" ${Pictures.url}" >';
+  restaurantsHTML += restaurant.fields['Pictures'];
     restaurantsHTML += '<hr />';
   });
   restaurantsDiv.html(restaurantsHTML);
