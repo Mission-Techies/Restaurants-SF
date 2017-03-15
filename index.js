@@ -25,12 +25,15 @@ if (restaurant.fields['Hours']) {
   restaurantsHTML += `<p>${restaurant.fields['Hours']}</p>`;
 };
 
+if (restaurant.fields['Menu']) {
+  restaurantsHTML += '<a href="' + restaurant.fields['Menu'] + '">' + restaurant.fields['Menu'] + '</a>';
+}
 
 
-    restaurantsHTML += '<a href="' + restaurant.fields['Menu'] + '">' + restaurant.fields['Menu'] + '</a>';
 
 
   $.each(restaurants_Pictures, function(i, Pictures){
+  restaurantsHTML += "</br>";
     restaurantsHTML += `<img src="${Pictures.url}">`;
     console.log(Pictures.url);
     restaurantsHTML += '<hr />';
