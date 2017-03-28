@@ -11,7 +11,8 @@ img {
 
 }
 .rightsidebar {
-  width: 66%
+  width: 66% ;
+  text-align:center;
 }
 .sidebar {
   width: 33%
