@@ -20,6 +20,7 @@ var renderrestaurantsData = function(data) {
       console.log(foodclass)
       restaurantsHTML += '<h3 class="hidden">' + restaurant.fields['Cuisine'] + '</h3>';
 
+
     }
 
     if (restaurant.fields['phone number']) {
@@ -56,3 +57,11 @@ var renderrestaurantsData = function(data) {
 }
 //
 $.getJSON(restaurants_data_url, renderrestaurantsData);
+//
+// var filterButton = $('.filterButton');
+// filterButton.on('click', function () {
+//   console.log('test');
+//   console.log((this).value)
+
+
+//})

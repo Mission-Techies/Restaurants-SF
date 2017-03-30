@@ -1,6 +1,9 @@
 body {
   background-image: url(https://media.timeout.com/images/101714767/image.jpg);
   background-size: cover;
+
+
+
 }
 .navbar {
   color: blue;
@@ -16,6 +19,6 @@ h1 {
 color: #fff;
 
 }
-.hidden {
+/*.hidden {
   display: none;
-}
+}*/

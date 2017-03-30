@@ -17,13 +17,19 @@
       <a class="navbar-brand" href="index.html">Home</a>
     </div>
     <ul class="nav navbar-nav">
-      <li><a href="main.html">American</a></li>
+      <li><a href="main.html">Main</a></li>
 
     </ul>
   </div>
 </nav>
 <div class="container">
-  <div class="rightsidebar"></div>
+
+  <div class="rightsidebar">
+    <!-- <button class="filterButton American" type='button' value="American">American</button>
+    <button class="filterButton Italian" type='button' value="Italian">Italian</button>
+    <button class="filterButton Indian" type='button' value="Indian">Indian</button> -->
+  </div>
+
   <div class="restaurants"></div>
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
@@ -31,23 +37,41 @@
 </div>
 <div class="sidebar" >
 
-  <form id="my-form">
-    <label for="name"> Restaurant Name</label>
-    <input type="text" name="fullname" /><br>
 
 
+        <!-- <h3>My Google Maps Demo</h3>
+        <div id="map"></div>
+        <script>
+         function initMap() {
+           var uluru = {lat: -25.363, lng: 131.044};
+           var map = new google.maps.Map(document.getElementById('map'), {
+             zoom: 4,
+             center: uluru
+           });
+           var marker = new google.maps.Marker({
+             position: uluru,
+             map: map
+           });
+         }
+       </script>
+       <script async defer
+       src="https://maps.googleapis.com/maps/api/js?key=keykETEaNX5SX8cZb&callback=initMap">
+       </script>
+ -->
 
 
-
+ <!-- <form id="my-form">
+   <label for="name"> Restaurant Name</label><br>
+   <input type="text" name="fullname" /><br>
 
     <label for="review">review</label><br>
     <textarea name="bio" /></textarea>
 
      <br ><button type="submit">Submit</button>
-  </form>
+  </form> -->
   <div id="submit-message"></div>
 </div>
   <script src="index.js"></script>
-    <script src="map.js"></script>
+    <!-- <script src="map.js"></script> -->
 </body>
 </html>
